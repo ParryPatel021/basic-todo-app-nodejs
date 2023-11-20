@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "7bca912f-cc61-46c6-8a3a-4ffd34b48494",
+		"name": "Basic-Todo-App-Nodejs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30901697"
+	},
+	"item": [
+		{
+			"name": "SetTodos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "text",
+							"value": "to be deleted",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:5000/api/todos/"
+			},
+			"response": []
+		},
+		{
+			"name": "GetTodos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:5000/api/todos/"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateTodos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "text",
+							"value": "Setup Shared Preference",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:5000/api/todos/655af45d09d1b9abc4e9e0dc"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTodos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:5000/api/todos/655af4b509d1b9abc4e9e0e2"
+			},
+			"response": []
+		}
+	]
+}
